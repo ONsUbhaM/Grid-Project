@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1container{
+    padding: 10px;
+    height: 95vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 55% 5%;
+    grid-gap: 10px;
+}
+
+.first{
+    background-color: rgba(255, 166, 0, 0.557);
+    grid-column: span 1;
+}
+.second{
+    background-color: grey;
+    grid-column: span 2;
+}
+
+.third{
+    background-color: slateblue;
+    grid-column: span 3;
+}
+
+/* fourth and fifth card */
+.card1 {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.on{
+    background-color: grey;
+    flex: 1;
+}
+
+.sixth{
+    background-color: green;
+}
+
+.footer{
+    background-color: rgb(31, 125, 92);
+    grid-column: span 3;
+}
+
+@media( max-width: 720px){
+    .section1container{
+        padding: 10px;
+        height: 200vh;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 25% 25% 20% 25% 5%;
+        grid-gap: 10px;
+    }
+    .fourth{
+        grid-column: span 3;
+    }
+    
+    .fifth{
+        grid-column: span 1;
+    }
+    .sixth{
+        grid-column: span 2;
+    }
+}
